@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AntilostCameraActivity" >
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.cn.jmantiLost.view.AntilostPreview
+            android:id="@+id/ap_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.cn.jmantiLost.view.AntilostPreview>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/take_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/take_photo"
+        android:onClick="clickedTakePhoto"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_take_photo_selector"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/gallery"
+        android:onClick="clickedGallery"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/focus_mode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/focus_mode"
+        android:onClick="clickedFocusMode"
+        android:padding="10dp"
+        android:src="@drawable/focus_mode_auto"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/flash"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/flash_mode"
+        android:onClick="clickedFlash"
+        android:padding="10dp"
+        android:src="@drawable/flash_auto"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/switch_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/switch_camera"
+        android:onClick="clickedSwitchCamera"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/switch_camera"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_slice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_divider"
+                android:visibility="gone" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark" >
+            </TabWidget>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_black"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_selector" >
+                </ImageView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/pb_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/progressbar_circle"
+                    android:indeterminateDuration="1200"
+                    android:maxHeight="600dp"
+                    android:maxWidth="600dp"
+                    android:minHeight="250dp"
+                    android:minWidth="250dp" />
+
+                <TextView
+                    android:id="@+id/tv_scan_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/scanning"
+                    android:textColor="@color/blue_light"
+                    android:textSize="@dimen/txt_size_18" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_connect_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_blue_selector"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tv_connect_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scann_device"
+                        android:textColor="@color/blue_light"
+                        android:textSize="@dimen/txt_size_18" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</TabHost>

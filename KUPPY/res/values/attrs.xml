@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="DrawableStates">
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_focused" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_window_focused" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_enabled" format="boolean" />
+		<!-- State identifier indicating that the object <var>may</var> display 
+			a check mark. See {@link R.attr#state_checked} for the identifier that indicates 
+			whether it is actually checked. -->
+		<attr name="state_checkable" format="boolean" />
+		<!-- State identifier indicating that the object is currently checked. 
+			See {@link R.attr#state_checkable} for an additional identifier that can 
+			indicate if any object may ever display a check, regardless of whether state_checked 
+			is currently set. -->
+		<attr name="state_checked" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_selected" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_active" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_single" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_first" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_middle" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_last" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_pressed" format="boolean" />
+	</declare-styleable>
+
+	<!-- =============================== -->
+	<!-- TabSelector class attributes -->
+	<!-- =============================== -->
+	<eat-comment />
+
+	<declare-styleable name="SlidingTab">
+		<!-- Use "horizontal" for a row, "vertical" for a column. The default is 
+			horizontal. -->
+		<attr name="orientation" format="integer"/>
+	</declare-styleable>
+	
+</resources>
